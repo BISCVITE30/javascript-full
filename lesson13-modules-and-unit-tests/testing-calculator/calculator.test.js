@@ -16,3 +16,7 @@ it('get result /', () => {
   const result = calc('2 / 2');
   expect(result).toEqual('2 / 2 = 1');
 });
+it('get result from calculator', () => {
+  const result = calc(2 + 2);
+  expect(result).toEqual(null);
+});
