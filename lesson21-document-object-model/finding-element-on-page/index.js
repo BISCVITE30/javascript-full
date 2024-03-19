@@ -1,5 +1,5 @@
 export function getTitleElement() {
-  const titleElem = document.querySelector('h1[class="title"]');
+  const titleElem = document.querySelector('.title');
   console.dir(titleElem);
   return titleElem;
 }
