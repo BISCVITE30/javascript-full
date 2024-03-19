@@ -1,8 +1,21 @@
 function createMessenger() {
-  const message = 'Just learn it';
-  const sender = 'Gromcode';
+  let sender = 'Gromcode';
+  let message = 'Just learn it';
+  function sendMessage(name) {
+    console.log(`Hello, ${name}! ${message}! This message was sent by ${sender}`);
+  }
+  function setMessage(text) {
+    message = text;
+  }
+  function setSender(nameSender) {
+    sender = nameSender;
+  }
 
-  // put your code here
+  return {
+    sendMessage,
+    setMessage,
+    setSender,
+  };
 }
 
 // examples
