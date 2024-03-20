@@ -22,12 +22,12 @@ const logGreyP = logTarget.bind(null, 'P', 'grey');
 const logGreySpan = logTarget.bind(null, 'SPAN', 'grey');
 
 const addHandl = () => {
+    divElem.addEventListener('click', logGreenDiv, true);
+    pElem.addEventListener('click', logGreenP, true);
+    spanElem.addEventListener('click', logGreenSpan, true);
   divElem.addEventListener('click', logGreyDiv);
   pElem.addEventListener('click', logGreyP);
   spanElem.addEventListener('click', logGreySpan);
-  divElem.addEventListener('click', logGreenDiv, true);
-  pElem.addEventListener('click', logGreenP, true);
-  spanElem.addEventListener('click', logGreenSpan, true);
 };
 const removeHandl = () => {
   divElem.removeEventListener('click', logGreyDiv);
